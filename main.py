@@ -22,6 +22,7 @@ def main():
     parser = InputParser(input_file)
     lawn, mowers = parser.parse()
     controller = MowerController(lawn, mowers)
+    controller.run()
     for m in mowers:
         print(m)
 
